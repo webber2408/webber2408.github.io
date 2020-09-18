@@ -1,0 +1,27 @@
+/* General */
+html{
+  font-size: 15px;
+}
+body{
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px;
+  background-color: #efecec;
+  font-family: 'Ubuntu', sans-serif;
+  color: black;
+}
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 500px){
+  html{
+    font-size: 11px;
+  }
+  body{
+    padding: 20px 10px;
+  }
+}
