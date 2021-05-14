@@ -1,3 +1,29 @@
+/* General */
+
+.auto-flow {
+  overflow-y: auto !important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #24292e;
+  color: #000126;
+  font-family: 'Ubuntu', sans-serif;
+  perspective: 600px;
+  overflow-x: hidden;
+}
+
 header {
   position: absolute;
   min-height: 48px;
@@ -259,6 +285,9 @@ header > a {
 /* Responsive Media Queries */
 
 @media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
   .card {
     margin: 60px 10px 0px 10px;
   }
@@ -269,10 +298,11 @@ header > a {
     margin: 20px 0px !important;
   }
   .course-item__details_heading {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: bold;
   }
   .course-item__details_text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #hubspot-messages-iframe-container {
     bottom: 40px !important;
@@ -280,9 +310,6 @@ header > a {
 }
 
 @media only screen and (max-width: 500px) {
-  html {
-    font-size: 11px;
-  }
   header {
     padding-right: 20px;
     padding-top: 10px;
