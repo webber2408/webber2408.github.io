@@ -1,191 +1,295 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles15.css">
-  <link rel="stylesheet" href="css/drop-down1.css">
-  <link rel="stylesheet" href="css/responsiveslides.css">
-  <title>Resume - Rahul Sharma</title>
-</head>
-<body>
-  <header>
-      <a href = "posts/posts.html">Posts</a>
-      <a href = "blogs/blogs.html">Blogs</a>
-  </header>
-  <section class = "about-section">
-    <div class = "card">
-      <div class = "card__face card__face--front tap-card">
-        <img src = "images/rahul1.png" class = "tap-card__image" width = "200"/>
-        <div class = "tap-card__details">
-          <h4> Hi there! I'm Rahul </h4>
-          <h6> Full Stack JavaScript Developer | Freelancer </h6>
-          <h6>Tech Blogger | Open Source Contributor </h6>
-          <br/>
-          <h6 style = "color: white;">Push to Flip!</h6>
-        </div>
-      </div>
-      <div class = "card__face card__face--back profile">
-        <div class = "profile__picture">
-          <img src = "images/rahul2.png" class = "profile__picture-image"/>
-        </div>
-        <div class = "profile__header"></div>
-        <div class = "profile__content pcontent">
-          <div class = "pcontent__head">
-            <a href= "https://www.linkedin.com/in/rahul-sharma-25b30b114/" target="_blank">
-              <button class = "pcontent__button pcontent__button--blue">
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i> <span class = "social-name">LinkedIn</span>
-              </button>
-            </a>
-            <a href = "https://github.com/webber2408/" target="_blank">
-              <button class = "pcontent__button pcontent__button--black">
-                <i class="fa fa-github" aria-hidden="true"></i> <span class = "social-name">Github</span>
-              </button>
-            </a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles16.css" />
+    <link rel="stylesheet" href="css/drop-down1.css" />
+    <link rel="stylesheet" href="css/responsiveslides.css" />
+    <link rel="stylesheet" href="css/squareboat.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+    <script
+      src="https://unpkg.com/react@17/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <title>Resume - Rahul Sharma</title>
+  </head>
+  <body>
+    <header>
+      <a href="posts/posts.html">Posts</a>
+      <a href="blogs/blogs.html">Blogs</a>
+    </header>
+    <section class="about-section">
+      <div class="card">
+        <div class="card__face card__face--front tap-card">
+          <img src="images/rahul1.png" class="tap-card__image" width="200" />
+          <div class="tap-card__details">
+            <h4>Hi there! I'm Rahul</h4>
+            <h6>Full Stack JavaScript Developer | Freelancer</h6>
+            <h6>Tech Blogger | Open Source Contributor</h6>
+            <br />
+            <h6 style="color: white">Push to Flip!</h6>
           </div>
-          <div class = "pcontent__details">
-            <div class = "details__left">
-              <h3 class = "title"> Rahul Sharma </h3>
-              <p class = "description">Full Stack JavaScript Developer | MERN <i class="fa fa-laptop" aria-hidden="true"></i></p>
-              <p class = "description"><i class="fa fa-map-marker" aria-hidden="true"></i> Noida, Uttar Pradesh, India</p>
+        </div>
+        <div class="card__face card__face--back profile">
+          <div class="profile__picture">
+            <img src="images/rahul.jpeg" class="profile__picture-image" />
+          </div>
+          <div class="profile__header"></div>
+          <div class="profile__content pcontent">
+            <div class="pcontent__head">
+              <a
+                href="https://www.linkedin.com/in/rahul-sharma-25b30b114/"
+                target="_blank"
+              >
+                <button class="pcontent__button pcontent__button--blue">
+                  <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                  <span class="social-name">LinkedIn</span>
+                </button>
+              </a>
+              <a href="https://github.com/webber2408/" target="_blank">
+                <button class="pcontent__button pcontent__button--black">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  <span class="social-name">Github</span>
+                </button>
+              </a>
             </div>
-            <div class = "details__right">
-              <p class = "work-description"><i class="fa fa-briefcase" aria-hidden="true"></i> InBadlav</p>
-              <p class = "work-description"><i class="fa fa-graduation-cap" aria-hidden="true"></i> Jaypee Institute Of Information Technology</p>
+            <div class="pcontent__details">
+              <div class="details__left">
+                <h3 class="title">Rahul Sharma</h3>
+                <p class="description">
+                  Full Stack JavaScript Developer | MERN
+                  <i class="fa fa-laptop" aria-hidden="true"></i>
+                </p>
+                <p class="description">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Noida,
+                  Uttar Pradesh, India
+                </p>
+              </div>
+              <div class="details__right">
+                <p class="work-description">
+                  <i class="fa fa-briefcase" aria-hidden="true"></i> Squareboat
+                </p>
+                <p class="work-description">
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i> Jaypee
+                  Institute Of Information Technology
+                </p>
+              </div>
             </div>
           </div>
+          <div class="profile__about">
+            <h4>
+              Hi there <i class="fa fa-hand-peace-o" aria-hidden="true"></i>,
+              I'm Rahul, a Software Developer by profession and an eager learner
+              from the heart.
+            </h4>
+            <p class="about-description">
+              My introduction to the Computer Science field was made during my
+              inquisitive childhood years, where I was curious to understand how
+              my favorite 'fly-on click helicopter
+              <i class="fa fa-gamepad" aria-hidden="true"></i>' game worked!
+            </p>
+            <p class="about-description">
+              Ever since then, I dreamt of diving deep into this field and here
+              I am building scalable and optimized web portals.
+            </p>
+          </div>
         </div>
-        <div class = "profile__about">
-          <h4>Hi there <i class="fa fa-hand-peace-o" aria-hidden="true"></i>, I'm Rahul, a Software Developer by profession and an eager learner from the heart.</h4>
-          <p class = "about-description">My introduction to the Computer Science field was made during my inquisitive childhood years, where I was curious to understand how my favorite 'fly-on click helicopter <i class="fa fa-gamepad" aria-hidden="true"></i>' game worked!</p>
-          <p class = "about-description">Ever since then, I dreamt of diving deep into this field and here I am building scalable and optimized web portals.</p>
+      </div>
+      <a href="#WebDevelopmentMasterCourse" class="dropdown-link">
+        <div class="dropdown-container">
+          <div class="chevron"></div>
+          <div class="chevron"></div>
+          <div class="chevron"></div>
         </div>
+      </a>
+    </section>
+
+    <div class="course-wrapper" id="WebDevelopmentMasterCourse">
+      <span class="course-wrapper__title"
+        >&#x1F31F; Web Development for Beginners &#x1F31F;</span
+      >
+      <span class="course-wrapper__title course-wrapper__title--border"
+        >(Master Course)</span
+      >
+      <div class="course-wrapper__description">
+        <p class="course-wrapper__description-text">
+          You will surely admit, the time has come when everybody is trying to
+          push their limits and are assidious in making their online presense
+          &#x1F4BB;.
+        </p>
+        <p class="course-wrapper__description-text">
+          <em><b>So, what stops you?</b></em>
+        </p>
+        <p class="course-wrapper__description-text">
+          I have created a complete set of beginner level web development
+          resource that will help you dive in quick into the field of Web
+          Development. Finishing up all the below resources will surely give you
+          a head start &#x270C; !
+        </p>
+        <p class="course-wrapper__description-text">
+          <em
+            ><b> Why haven't you started reading it already &#x1F61C; ?</b></em
+          >
+        </p>
+      </div>
+      <div class="course-wrapper__slides">
+        <div class="course-item">
+          <ul class="rslides">
+            <li><img src="images/webd1.png" alt="" /></li>
+            <li><img src="images/webd2.png" alt="" /></li>
+          </ul>
+          <div class="course-item__details">
+            <a
+              class="course-item__details_heading"
+              href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-web-development-237025400"
+              target="_blank"
+            >
+              Introduction to Web Development
+            </a>
+            <p class="course-item__details_text">
+              A crisp introduction to the field of Web Development. Gives a
+              little insight into the world of clients & servers.
+            </p>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <ul class="rslides">
+            <li><img src="images/html1.png" alt="" /></li>
+            <li><img src="images/html2.png" alt="" /></li>
+          </ul>
+          <div class="course-item__details">
+            <a
+              class="course-item__details_heading"
+              href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-html-5-237025254"
+              target="_blank"
+            >
+              HTML5
+            </a>
+            <p class="course-item__details_text">
+              Diving into webpage structures, the slide covers anatomy,
+              semantics & some cool facts about HTML5.
+            </p>
+          </div>
+        </div>
+
+        <div class="course-item">
+          <ul class="rslides">
+            <li><img src="images/css1.png" alt="" /></li>
+            <li><img src="images/css2.png" alt="" /></li>
+          </ul>
+          <div class="course-item__details">
+            <a
+              class="course-item__details_heading"
+              href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-css3-237025600"
+              target="_blank"
+            >
+              CSS3
+            </a>
+            <p class="course-item__details_text">
+              We always love to style! Covered inside are some great concepts
+              including CSS3 Box Model, Cascading, Specificity & Inheritance.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-wrapper__description">
+        <p class="course-wrapper__description-text">
+          Whetever happens, there is always room for feedbacks. If you have any,
+          or want to discuss anything related to the course, feel free to drop a
+          mail to <em><b>rahul@rsharma.in</b></em> !
+        </p>
+        <p class="course-wrapper__description-text">
+          I would be more than happy to help!
+        </p>
       </div>
     </div>
-    <a href = "#WebDevelopmentMasterCourse" class="dropdown-link">
-      <div class="dropdown-container">
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-        <div class="chevron"></div>
-      </div>
-    </a>
-  </section>
 
-  <div class="course-wrapper" id="WebDevelopmentMasterCourse">
-    <span class="course-wrapper__title">&#x1F31F; Web Development for Beginners &#x1F31F;</span>
-    <span class="course-wrapper__title course-wrapper__title--border">(Master Course)</span>
-    <div class="course-wrapper__description">
-      <p class="course-wrapper__description-text">
-        You will surely admit, the time has come when everybody is trying to push their limits and are assidious in making their online presense &#x1F4BB;.
-      </p>
-      <p class="course-wrapper__description-text">
-        <em><b>So, what stops you?</b></em>
-      </p>
-      <p class="course-wrapper__description-text">
-        I have created a complete set of beginner level web development resource that will help you dive in quick into the field of Web Development.
-        Finishing up all the below resources will surely give you a head start &#x270C; !
-      </p>
-      <p class="course-wrapper__description-text">
-        <em><b> Why haven't you started reading it already &#x1F61C; ?</b></em>
-      </p>
+    <div class="company-wrapper">
+      <span class="white-heading font-kalam">What I am upto these days?</span>
+      <div class="squareboat-details"></div>
     </div>
-    <div class = "course-wrapper__slides">
-      <div class = "course-item">
-        <ul class="rslides">
-          <li><img src="images/webd1.png" alt=""></li>
-          <li><img src="images/webd2.png" alt=""></li>
-        </ul>
-        <div class="course-item__details">
-          <a class="course-item__details_heading" href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-web-development-237025400" target="_blank">
-            Introduction to Web Development
-          </a>
-          <p class="course-item__details_text">
-            A crisp introduction to the field of Web Development. Gives a little insight into the world of clients & servers.
-          </p>
-        </div>
-      </div>
 
-      <div class = "course-item">
-        <ul class="rslides">
-          <li><img src="images/html1.png" alt=""></li>
-          <li><img src="images/html2.png" alt=""></li>
-        </ul>
-        <div class="course-item__details">
-          <a class="course-item__details_heading" href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-html-5-237025254" target="_blank">
-            HTML5
-          </a>
-          <p class="course-item__details_text">
-            Diving into webpage structures, the slide covers anatomy, semantics & some cool facts about HTML5.
-          </p>
-        </div>
-      </div>
+    <div class="component-scripts"></div>
 
-      <div class = "course-item">
-        <ul class="rslides">
-          <li><img src="images/css1.png" alt=""></li>
-          <li><img src="images/css2.png" alt=""></li>
-        </ul>
-        <div class="course-item__details">
-          <a class="course-item__details_heading" href="https://www.slideshare.net/RAHULSHARMA2846/introduction-to-css3-237025600" target="_blank">
-            CSS3
-          </a>
-          <p class="course-item__details_text">
-            We always love to style! Covered inside are some great concepts including CSS3 Box Model, Cascading, Specificity & Inheritance.
-          </p>
-        </div>
-      </div>
-
-    </div>
-    <div class="course-wrapper__description">
-      <p class="course-wrapper__description-text">
-        Whetever happens, there is always room for feedbacks. If you have any, or want to discuss anything related to the course, feel
-        free to drop a mail to <em><b>rahul@rsharma.in</b></em> !
-      </p>
-      <p class="course-wrapper__description-text">
-        I would be more than happy to help!
-      </p>
-    </div>
-  </div>
-
-  <!-- Calendly link widget begin -->
-  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-  <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rahulsharma24/15min'});return false;" class = "calendly-button">Schedule a call with me?</a>
-  <!-- Calendly link widget end -->
-  <script>
-  var card = document.querySelector('.card');
-  var body = document.querySelector('body');
-  var dropdownContainer = document.querySelector('.dropdown-container');
-  card.addEventListener( 'click', function() {
-    if(document.querySelectorAll('.auto-flow').length > 0){
-      body.classList.remove('auto-flow');
-    }else{
-      setTimeout(() => {
-        console.log("added");
-        body.classList.add('auto-flow');
-      }, 1000);
-    }
-    card.classList.toggle('is-flipped');
-    dropdownContainer.classList.toggle('dropdown-container-flipped');
-  });
-  </script>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/responsiveslides.min.js"></script>
-  <script>
-    $(function() {
-      $(".rslides").responsiveSlides({
-        maxwidth: 335,
-        speed: 1000,
-        timeout: 2000
+    <!-- Calendly link widget begin -->
+    <script src="react-postsource/src/components/Squareboat/squareboat.js"></script>
+    <script
+      src="https://assets.calendly.com/assets/external/widget.js"
+      type="text/javascript"
+    ></script>
+    <a
+      href=""
+      onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rahulsharma24/15min'});return false;"
+      class="calendly-button"
+      >Schedule a call with me?</a
+    >
+    <!-- Calendly link widget end -->
+    <script>
+      var card = document.querySelector('.card');
+      var body = document.querySelector('body');
+      var dropdownContainer = document.querySelector('.dropdown-container');
+      card.addEventListener('click', function () {
+        if (document.querySelectorAll('.auto-flow').length > 0) {
+          body.classList.remove('auto-flow');
+        } else {
+          setTimeout(() => {
+            console.log('added');
+            body.classList.add('auto-flow');
+          }, 1000);
+        }
+        card.classList.toggle('is-flipped');
+        dropdownContainer.classList.toggle('dropdown-container-flipped');
       });
-    });
-  </script>
-  <!-- Start of HubSpot Embed Code -->
-  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/8436986.js"></script>
-<!-- End of HubSpot Embed Code -->
-</body>
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="js/responsiveslides.min.js"></script>
+    <script>
+      $(function () {
+        $('.rslides').responsiveSlides({
+          maxwidth: 335,
+          speed: 1000,
+          timeout: 2000,
+        });
+      });
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+    <script
+      type="text/javascript"
+      id="hs-script-loader"
+      async
+      defer
+      src="//js.hs-scripts.com/8436986.js"
+    ></script>
+    <!-- End of HubSpot Embed Code -->
+  </body>
 </html>
