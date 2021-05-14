@@ -33,7 +33,7 @@
   animation-name: fade-disco;
   animation-duration: 1s;
   animation-iteration-count: infinite;
-  transform: scale(1.6) rotate(-20deg);
+  transform: scale(1.6);
 }
 
 /* Responsive Media Queries */
@@ -59,13 +59,13 @@
     max-width: 100% !important;
   }
   .squareboat-icon {
-    transform: scale(1.1) rotate(-20deg);
+    transform: scale(1.1);
   }
 }
 
 @media only screen and (max-width: 600px) {
   .squareboat-icon {
-    transform: scale(1) rotate(-20deg);
+    transform: scale(1);
   }
   .sb-details {
     font-size: 1.2rem;
