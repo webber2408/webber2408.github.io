@@ -1,0 +1,371 @@
+/* General */
+
+.auto-flow {
+  overflow-y: auto !important;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #24292e;
+  color: #000126;
+  font-family: "Ubuntu", sans-serif;
+  perspective: 600px;
+  overflow-x: hidden;
+}
+
+header {
+  position: absolute;
+  min-height: 48px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  display: flex;
+  padding-right: 40px;
+  padding-top: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+header > a {
+  text-decoration: none;
+  font-family: "Kalam", cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00e1fc;
+  margin-left: 10px;
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  position: relative;
+  perspective: 900px;
+}
+.card {
+  margin-top: 50px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  background-color: transparent;
+}
+.card__face {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  backface-visibility: hidden;
+}
+.card__face--front {
+  max-width: 700px;
+}
+.card__face--back {
+  transform: rotateY(180deg);
+}
+.card.is-flipped {
+  transform: rotateY(180deg);
+}
+.tap-card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Kalam", cursive;
+  font-size: 2rem;
+  color: #00e1fc;
+  cursor: pointer;
+}
+.tap-card__details {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* Profile */
+.profile {
+  position: relative;
+  height: auto;
+  max-width: 700px;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+  box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 1);
+}
+
+/* Profile Header */
+.profile__header {
+  min-height: 150px;
+  background-color: aliceblue;
+  background: url("../images/back_linkedin.jpeg");
+  background-size: cover;
+  margin: -20px -21px;
+}
+
+/* Profile Picture */
+.profile__picture {
+  background-color: transparent;
+  position: absolute;
+  top: 72px;
+  left: 2%;
+}
+.profile__picture-image {
+  height: 150px;
+  width: 138px;
+  border-radius: 100%;
+}
+
+/* Profile Content */
+.profile__content {
+  min-height: 100px;
+  margin-top: 26px;
+}
+.pcontent__head {
+  min-height: 80px;
+}
+.pcontent__button {
+  border: 0px;
+  border-radius: 0px;
+  color: white;
+  width: 100px;
+  height: 25px;
+  float: right;
+  margin: 10px 10px 0px 0px;
+  font-family: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.pcontent__button--blue {
+  background-color: #0073b1;
+}
+.pcontent__button--blue:hover {
+  background-color: #224d64;
+}
+.pcontent__button--black {
+  background-color: #24292e;
+}
+.pcontent__button--black:hover {
+  background-color: grey;
+  color: black;
+}
+
+.pcontent__details {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.details__left {
+  width: 60%;
+}
+.details__left > .title,
+.details__left > .description {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+.details-right {
+  width: 40%;
+}
+.work-description {
+  text-align: right;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+/* Profile About */
+.profile__about {
+  font-size: 1.2rem;
+  background-color: #ebebeb;
+  padding: 4%;
+  border-radius: 10px;
+  font-family: "Kalam", cursive;
+  margin-top: 15px;
+}
+.about-description {
+  margin: 10px 0px;
+}
+
+/* Calendly */
+.calendly-button {
+  background-color: #00e1fc;
+  color: #24292e;
+  font-family: "Kalam", cursive;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 6px 10px;
+  border-radius: 2px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  text-decoration: none;
+  z-index: 2;
+}
+
+/* Slides Wrapper */
+.course-wrapper {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0px;
+}
+.course-wrapper__slides {
+  padding: 10px;
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.course-wrapper__title {
+  font-family: "Caveat", cursive;
+  font-size: 2rem;
+  text-align: center;
+}
+.course-wrapper__title--border {
+  border-bottom: 1px solid black;
+}
+.course-wrapper__description {
+  font-size: 1.2rem;
+  padding: 40px 40px 0px 40px;
+  text-align: center;
+}
+.course-wrapper__description-text {
+  margin-top: 10px;
+}
+.course-item {
+  margin: 20px !important;
+  width: 335px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.course-item__details {
+  padding: 20px 10px 40px 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.course-item__details_heading {
+  text-decoration: none;
+  color: #151580;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.course-item__details_text {
+  padding-top: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Company */
+.company-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  padding-top: 100px;
+}
+
+/* Responsive Media Queries */
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 12px;
+  }
+  .card {
+    margin: 60px 10px 0px 10px;
+  }
+  .profile {
+    padding: 14px;
+  }
+  .profile__header {
+    min-height: 89px;
+    margin: -14px -14px;
+    background-size: contain;
+  }
+  .profile__picture-image {
+    height: 105px;
+    width: 99px;
+  }
+  .profile__content {
+    /* min-height: 56px; */
+    margin-top: 19px;
+  }
+  .profile__picture {
+    top: 38px;
+    left: 4%;
+  }
+  .course-wrapper__title {
+    font-size: 2.2rem;
+  }
+  .course-item {
+    margin: 20px 0px !important;
+  }
+  .course-item__details_heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .course-item__details_text {
+    font-size: 1.2rem;
+  }
+  #hubspot-messages-iframe-container {
+    bottom: 40px !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  header {
+    padding-right: 20px;
+    padding-top: 10px;
+  }
+  header > a {
+    font-size: 1.8rem;
+  }
+  .tap-card {
+    padding-top: 50px;
+  }
+  .calendly-button {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .pcontent__button {
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+    border-radius: 100%;
+  }
+  .social-name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .card {
+    margin-top: 60px;
+  }
+}

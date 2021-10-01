@@ -1,0 +1,73 @@
+.ntpc-internship {
+  background-color: #eeeeee;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px 0px;
+  margin-bottom: 200px;
+}
+
+.np-icon-wrapper {
+  width: 40%;
+}
+.np-details {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+@keyframes fade-disco {
+  from {
+    filter: drop-shadow(0 0 0.75rem #2d94f3);
+  }
+  to {
+    filter: none;
+  }
+}
+
+.ntpc-icon {
+  animation-name: fade-disco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform: scale(0.8);
+  width: 54%;
+}
+
+/* Responsive Media Queries */
+
+@media only screen and (max-width: 950px) {
+  .ntpc-details,
+  .ntpc-internship {
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+
+  .np-icon-wrapper {
+    width: 100%;
+    padding-top: 20px !important;
+  }
+  .np-details {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .np-details-content {
+    max-width: 100% !important;
+  }
+  .ntpc-icon {
+    transform: scale(1);
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .np-details {
+    font-size: 1.2rem;
+  }
+}

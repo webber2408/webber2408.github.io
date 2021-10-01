@@ -1,0 +1,74 @@
+.fundwave-details {
+  background-color: #eeeeee;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-top: 100px;
+  padding: 50px 0px;
+}
+
+.sb-icon-wrapper {
+  width: 40%;
+  padding-top: 50px;
+}
+.sb-details {
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+@keyframes fade-disco {
+  from {
+    filter: drop-shadow(0 0 0.75rem #2d94f3);
+  }
+  to {
+    filter: none;
+  }
+}
+
+.fundwave-icon {
+  animation-name: fade-disco;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  transform: scale(1.6);
+}
+
+/* Responsive Media Queries */
+
+@media only screen and (max-width: 950px) {
+  .fundwave-details {
+    flex-direction: column;
+    padding: 20px;
+    padding-bottom: 100px;
+  }
+  .sb-icon-wrapper {
+    width: 100%;
+    padding-top: 20px !important;
+  }
+  .sb-details {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+  .sb-details-content {
+    max-width: 100% !important;
+  }
+  .fundwave-icon {
+    transform: scale(1.1);
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .fundwave-icon {
+    transform: scale(1);
+  }
+  .sb-details {
+    font-size: 1.2rem;
+  }
+}

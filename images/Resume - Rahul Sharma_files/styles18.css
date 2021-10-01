@@ -19,7 +19,7 @@ body {
   min-height: 100vh;
   background-color: #24292e;
   color: #000126;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   perspective: 600px;
   overflow-x: hidden;
 }
@@ -41,7 +41,7 @@ header {
 
 header > a {
   text-decoration: none;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-size: 1.5rem;
   font-weight: bold;
   color: #00e1fc;
@@ -55,12 +55,10 @@ header > a {
   flex-direction: column;
   min-height: 100vh;
   position: relative;
+  perspective: 900px;
 }
 .card {
-  height: auto;
-  max-width: 700px;
-  margin: 0 auto;
-  margin-top: 100px;
+  margin-top: 50px;
   transition: transform 1s;
   transform-style: preserve-3d;
   background-color: transparent;
@@ -85,7 +83,7 @@ header > a {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-size: 2rem;
   color: #00e1fc;
   cursor: pointer;
@@ -112,26 +110,28 @@ header > a {
 .profile__header {
   min-height: 150px;
   background-color: aliceblue;
-  background: url('../images/back1.png');
+  background: url("../images/back_linkedin.jpeg");
   background-size: cover;
+  margin: -20px -21px;
 }
 
 /* Profile Picture */
 .profile__picture {
   background-color: transparent;
   position: absolute;
-  top: 95px; /* 20px + 75px */
+  top: 72px;
   left: 2%;
 }
 .profile__picture-image {
-  height: 140px;
-  width: 140px;
+  height: 150px;
+  width: 138px;
   border-radius: 100%;
 }
 
 /* Profile Content */
 .profile__content {
   min-height: 100px;
+  margin-top: 26px;
 }
 .pcontent__head {
   min-height: 80px;
@@ -164,6 +164,8 @@ header > a {
 
 .pcontent__details {
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 .details__left {
   width: 60%;
@@ -188,7 +190,8 @@ header > a {
   background-color: #ebebeb;
   padding: 4%;
   border-radius: 10px;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
+  margin-top: 15px;
 }
 .about-description {
   margin: 10px 0px;
@@ -198,7 +201,7 @@ header > a {
 .calendly-button {
   background-color: #00e1fc;
   color: #24292e;
-  font-family: 'Kalam', cursive;
+  font-family: "Kalam", cursive;
   font-size: 1.2rem;
   font-weight: bold;
   padding: 6px 10px;
@@ -228,7 +231,7 @@ header > a {
   flex-wrap: wrap;
 }
 .course-wrapper__title {
-  font-family: 'Caveat', cursive;
+  font-family: "Caveat", cursive;
   font-size: 2rem;
   text-align: center;
 }
@@ -290,6 +293,26 @@ header > a {
   }
   .card {
     margin: 60px 10px 0px 10px;
+  }
+  .profile {
+    padding: 14px;
+  }
+  .profile__header {
+    min-height: 89px;
+    margin: -14px -14px;
+    background-size: contain;
+  }
+  .profile__picture-image {
+    height: 105px;
+    width: 99px;
+  }
+  .profile__content {
+    /* min-height: 56px; */
+    margin-top: 19px;
+  }
+  .profile__picture {
+    top: 38px;
+    left: 4%;
   }
   .course-wrapper__title {
     font-size: 2.2rem;

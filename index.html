@@ -26,10 +26,12 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/general1.css" />
-    <link rel="stylesheet" href="css/styles18.css" />
+    <link rel="stylesheet" href="css/styles19.css" />
     <link rel="stylesheet" href="css/drop-down1.css" />
     <link rel="stylesheet" href="css/responsiveslides.css" />
     <link rel="stylesheet" href="css/squareboat2.css" />
+    <link rel="stylesheet" href="css/fundwave.css" />
+    <link rel="stylesheet" href="css/ntpc.css" />
     <!-- Load React. -->
     <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
     <script
@@ -52,16 +54,16 @@
         <div class="card__face card__face--front tap-card">
           <img src="images/rahul1.png" class="tap-card__image" width="200" />
           <div class="tap-card__details">
-            <h4>Hi there! I'm Rahul</h4>
-            <h6>Full Stack JavaScript Developer | Freelancer</h6>
-            <h6>Tech Blogger | Open Source Contributor</h6>
+            <h4>Hi there! I'm Rahul Sharma</h4>
+            <h6>Software Engineer | Full Stack Developer</h6>
+            <h6>Frontend Engineer & JS ♥'er</h6>
             <br />
             <h6 style="color: white">Push to Flip!</h6>
           </div>
         </div>
         <div class="card__face card__face--back profile">
           <div class="profile__picture">
-            <img src="images/rahul.jpeg" class="profile__picture-image" />
+            <img src="images/self.jpeg" class="profile__picture-image" />
           </div>
           <div class="profile__header"></div>
           <div class="profile__content pcontent">
@@ -86,21 +88,18 @@
               <div class="details__left">
                 <h3 class="title">Rahul Sharma</h3>
                 <p class="description">
-                  Full Stack JavaScript Developer | MERN
-                  <i class="fa fa-laptop" aria-hidden="true"></i>
+                  <i class="fa fa-laptop" aria-hidden="true"></i> Software
+                  Engineer
                 </p>
                 <p class="description">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> Noida,
-                  Uttar Pradesh, India
+                  <i class="fa fa-map-marker" aria-hidden="true"></i> Buffalo,
+                  New York
                 </p>
               </div>
               <div class="details__right">
                 <p class="work-description">
-                  <i class="fa fa-briefcase" aria-hidden="true"></i> Squareboat
-                </p>
-                <p class="work-description">
-                  <i class="fa fa-graduation-cap" aria-hidden="true"></i> Jaypee
-                  Institute Of Information Technology
+                  <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                  University at Buffalo, SUNY
                 </p>
               </div>
             </div>
@@ -108,7 +107,7 @@
           <div class="profile__about">
             <h4>
               Hi there <i class="fa fa-hand-peace-o" aria-hidden="true"></i>,
-              I'm Rahul, a Software Developer by profession and an eager learner
+              I'm Rahul, a Software Engineer by profession and an eager learner
               from the heart.
             </h4>
             <p class="about-description">
@@ -136,9 +135,6 @@
     <div class="course-wrapper" id="WebDevelopmentMasterCourse">
       <span class="course-wrapper__title"
         >&#x1F31F; Web Development for Beginners &#x1F31F;</span
-      >
-      <span class="course-wrapper__title course-wrapper__title--border"
-        >(Master Course)</span
       >
       <div class="course-wrapper__description">
         <p class="course-wrapper__description-text">
@@ -225,57 +221,67 @@
       <div class="course-wrapper__description">
         <p class="course-wrapper__description-text">
           Whetever happens, there is always room for feedbacks. If you have any,
-          or want to discuss anything related to the course, feel free to drop a
-          mail to <em><b>rahul@rsharma.in</b></em> !
-        </p>
-        <p class="course-wrapper__description-text">
-          I would be more than happy to help!
+          or want to discuss anything related to the course, feel free to
+          schedule a meeting with me using the <em><b>Calendly</b></em> link on
+          the top!
         </p>
       </div>
     </div>
 
     <div class="company-wrapper">
-      <span class="white-heading font-kalam">What I am upto these days?</span>
+      <span class="white-heading font-kalam"
+        >What have I been doing full time?</span
+      >
       <div class="squareboat-details"></div>
+      <div class="fundwave-details"></div>
+    </div>
+    <div class="company-wrapper">
+      <span class="white-heading font-kalam">Previous Internships?</span>
+      <div class="fundwave-internship"></div>
+      <div class="ntpc-internship"></div>
     </div>
 
     <div class="component-scripts"></div>
 
     <!-- Calendly link widget begin -->
     <script src="react-postsource/src/components/Squareboat/squareboat.js"></script>
+    <script src="react-postsource/src/components/Fundwave/fundwave.js"></script>
+    <script src="react-postsource/src/components/Fundwave/fundwave-internship.js"></script>
+    <script src="react-postsource/src/components/NTPC/ntpc-internship.js"></script>
+
     <script
       src="https://assets.calendly.com/assets/external/widget.js"
       type="text/javascript"
     ></script>
-    <a
+    <!-- <a
       href=""
       onclick="Calendly.initPopupWidget({url: 'https://calendly.com/rahulsharma24/15min'});return false;"
       class="calendly-button"
       >Schedule a call with me?</a
-    >
+    > -->
     <!-- Calendly link widget end -->
     <script>
-      var card = document.querySelector('.card');
-      var body = document.querySelector('body');
-      var dropdownContainer = document.querySelector('.dropdown-container');
-      card.addEventListener('click', function () {
-        if (document.querySelectorAll('.auto-flow').length > 0) {
-          body.classList.remove('auto-flow');
+      var card = document.querySelector(".card");
+      var body = document.querySelector("body");
+      var dropdownContainer = document.querySelector(".dropdown-container");
+      card.addEventListener("click", function () {
+        if (document.querySelectorAll(".auto-flow").length > 0) {
+          body.classList.remove("auto-flow");
         } else {
           setTimeout(() => {
-            console.log('added');
-            body.classList.add('auto-flow');
+            console.log("added");
+            body.classList.add("auto-flow");
           }, 1000);
         }
-        card.classList.toggle('is-flipped');
-        dropdownContainer.classList.toggle('dropdown-container-flipped');
+        card.classList.toggle("is-flipped");
+        dropdownContainer.classList.toggle("dropdown-container-flipped");
       });
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="js/responsiveslides.min.js"></script>
     <script>
       $(function () {
-        $('.rslides').responsiveSlides({
+        $(".rslides").responsiveSlides({
           maxwidth: 335,
           speed: 1000,
           timeout: 2000,
