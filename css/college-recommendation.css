@@ -1,0 +1,38 @@
+.college-recommendation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 400px;
+  -webkit-box-shadow: 0px 0px 9px -1px #ffffff;
+  box-shadow: 0px 0px 9px -1px #ffffff;
+  background-color: #ffffff;
+}
+
+.college-recommendation__text {
+  text-align: center;
+  color: #828282;
+  margin-bottom: 40px;
+  font-size: 20px;
+}
+
+.college-recommendation__image > img {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+
+.college-recommendation__from {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .college-recommendation {
+    max-width: 90%;
+    margin: 0px;
+  }
+}
