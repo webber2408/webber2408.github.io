@@ -1,8 +1,3 @@
-# webber2408.github.io
+# Legacy Portfolio
 
-Portfolio
-
-https://rsharma.in
-
-TO START:
-npm run start
+https://legacy.rsharma.in
